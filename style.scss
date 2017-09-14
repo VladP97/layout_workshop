@@ -1,0 +1,181 @@
+$headerFooterBlockCl:rgb(33, 36, 41);
+$backGround:rgb(249, 249, 251);
+$fonts: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$navBorders: 2px solid rgb(60, 60, 60);
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: $backGround;
+    position: relative;
+    min-width: 1650px;
+    height: 100%;
+    text-align: center;
+}
+
+
+header{
+  position: relative;
+  background-color: $headerFooterBlockCl;
+  height: 327px;
+  width: 1650px;
+  text-align: center;
+  font-family: $fonts;
+  padding-top: 18px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  p{
+      top: -30px;
+  }
+}
+
+.mainImage {
+    position: relative;
+    margin-top: 18px;
+    text-align: center;
+    p{
+        margin-top: 20px;
+    }
+}
+
+.mainImageText {
+    text-align: justify;
+    position: absolute;
+    margin: -300px 0px 0px 300px;
+}
+
+.overTitleText {
+    margin-top: 330px;
+    margin-left: -655px;
+    position: absolute;
+    font-weight: normal;
+    display: inline;
+}
+
+.sliderBlock {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    width: 260px;
+    position: absolute;
+    padding-left: 10px;
+    margin-top: -350px 0px 0px 550px;
+    display: inline;
+    p {
+    text-align: center;
+    }
+}
+
+.sliderBlockText {
+    text-align: center;
+    font-weight: normal;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.line {
+    position: absolute;
+    text-align: left;
+    margin-left: -765px;
+    top: 0px;
+    border-left: $navBorders;
+    border-right: $navBorders;
+    padding: 18px;
+    display: inline;
+}
+
+nav {
+    position: absolute;
+    margin-left: 500px;
+    display: inline-block;
+    border-right: $navBorders;
+    height: 18px;
+    top: 0px;
+    padding-top: 20px 10px 20px 5px;
+    &:last-of-type {
+    border-left: 2px solid rgb(60, 60, 60);
+    padding-left: 0px;
+    }
+}
+
+.lines {
+    border-right: $navBorders;
+    top: 20px;
+    padding: 16px;
+}
+
+.fontType{
+    text-transform: uppercase;
+    font-family: $fonts;
+    font-weight: bold;
+    color: #fff;
+}
+
+h1 {
+    @extend .fontType;
+    position: absolute;
+    text-align: left;
+    margin-top: -330px 0px 0px -655px;
+    width: 500px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    display: inline;
+}
+
+h2 {
+    @extend .fontType;
+    font-size: 22px;
+    width: 230px;
+    color: black;
+    letter-spacing: 2px;
+    display: inline-block;
+    line-height: 30px;
+}
+
+h5 {
+    @extend .fontType;
+    text-align: left;
+    margin: 60px 0px 30px 0px;
+    font-size: 17px;
+    word-spacing: 5px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+footer {
+    background-color: $headerFooterBlockCl;
+    min-width: 1650px;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-right: 40px;
+    vertical-align: baseline;
+    display: block;
+    bottom: 0px;
+    flex: 0 0 auto;
+}
+
+.inputFields {
+    border: 0px solid rgb(247, 247, 247);
+    width: 450px;
+    height: 50px;
+    vertical-align: top;
+    font-size: 20px;
+    text-indent: 30px;
+    font-family: $fonts;
+}
+
+.inputFields{
+    &:focus::-webkit-input-placeholder, :focus::-moz-placeholder, :focus::-moz-placeholder, :focus::-moz-placeholder{
+        color: transparent;
+    }
+}
